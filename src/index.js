@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './App';
-import Button from './Button'
-import StundentInfo from './StundentInfo'
-import * as serviceWorker from './serviceWorker';
+// import Button from './Button'
+// import StundentInfo from './StundentInfo'
+
+// import StateComponent from './StateComponent';
+import Todo from './Todo';
+import TodoRedux from './Todo-Redux';
 
 ReactDOM.render(
 <div>
-    <App />
-    <Button />
-    <StundentInfo />
+    <TodoRedux />
+    {/* <App /> */}
+    {/* <Button />
+    <StundentInfo /> */}
+    {/* <StateComponent /> */}
+    {/* <Todo /> */}
 </div>, 
 document.getElementById('root'));
 
